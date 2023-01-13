@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "d4c0650c-5346-4937-a061-31a772cc4db4",
+		"name": "Funcionarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post cargo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomeCargo\": \"teste\",\n    \"descricacaoCargo\": \"teste\",\n    \"salarioBase\": 123\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cargos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cargos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
