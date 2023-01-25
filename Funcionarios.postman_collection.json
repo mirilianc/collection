@@ -6,13 +6,13 @@
 	},
 	"item": [
 		{
-			"name": "Post cargo",
+			"name": "Salva cargo",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"nomeCargo\": \"teste\",\n    \"descricacaoCargo\": \"teste\",\n    \"salarioBase\": 123\n}\n",
+					"raw": "{\n    \"nomeCargo\": \"analista\",\n    \"descricacaoCargo\": \"analista de sistemas\",\n    \"salarioBase\": 125.20\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -30,6 +30,98 @@
 						"cargos"
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salva funcionario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomeCargo\": \"analista\",\n    \"descricacaoCargo\": \"analista de sistemas\",\n    \"salarioBase\": 125.20\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cargos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cargos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca todos cargo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cargo by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/cargos/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cargos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Funcionario by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8080/cargos/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cargos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca cargo por id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Busca funcionario por id",
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
